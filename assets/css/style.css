@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 width: 100%;
 max-width: 880px;
 margin: 0 auto; /* выравниваем  блок по центру*/
+text-align: center;  /* выравнивает текст по центру контейнера*/
 
 }
 /* intro__suptitle*/
@@ -44,8 +45,8 @@ margin: 0 auto; /* выравниваем  блок по центру*/
 font-size: 72px;
 color: #fff;
 font-family: 'Kaushan Script', cursive;
+margin-bottom: 20px ;
 
-text-align: center;
 
 }
 /* Intro title*/
@@ -54,11 +55,20 @@ font-size: 150px;
 font-weight: 700;
 color: #fff;
 text-transform: uppercase;
-text-align: center;
+
 
 line-height: 1;
+}
+.intro__title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 60px auto ;
 
 }
+
 /* HEADER*/
 .header{
     width: 100%;
@@ -136,4 +146,23 @@ line-height: 1;
 */
 .nav__link:hover {
     color: #fce38a;
+}
+
+/* btn */
+.btn {
+display: inline-block;
+vertical-align: top;
+text-transform: uppercase;
+text-decoration: none;
+color:#fff;
+font-size: 14px;
+font-weight: 700;
+padding: 9px 30px;
+border: 3px solid #fff;
+margin: 0 auto;
+transition: background .1s linear, color .1s linear;
+}
+.btn:hover{
+    color: #333;
+    background-color: #fff;
 }
