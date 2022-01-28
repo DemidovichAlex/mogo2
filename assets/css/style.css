@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 .intro__inner {
 width: 100%;
 max-width: 880px;
-margin: 0 auto; /* выравниваем  блок по центру*/
+margin: 150px auto 0; /* выравниваем  блок по центру*/
 text-align: center;  /* выравнивает текст по центру контейнера*/
 
 }
