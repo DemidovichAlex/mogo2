@@ -175,10 +175,17 @@ transition: background .1s linear, color .1s linear;
 
 /* slider */
 .slider {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+
+}
+.slider__inner {
     display: flex;
     justify-content: space-between;
-
-    margin-top: 155px;
 
 }
 .slider__item {
@@ -187,7 +194,7 @@ transition: background .1s linear, color .1s linear;
     text-transform: uppercase;
      font-size: 18px;
      border-top: 3px solid #fff;
-     padding: 20px 0px;
+     padding: 20px 0px 0px;
      color: #fff;
      opacity: .7;
 }
