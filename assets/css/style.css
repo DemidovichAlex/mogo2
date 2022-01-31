@@ -1,5 +1,4 @@
 body {
-
     font-family:'Montserrat', sans-serif; /* вставляем сюда, потому что будем использовать этот шрифт на всем сайтк */
     font-size: 15px; /* шрифт по умолчанию */
     margin: 0;
@@ -54,8 +53,6 @@ font-size: 72px;
 color: #fff;
 font-family: 'Kaushan Script', cursive;
 margin-bottom: 20px ;
-
-
 }
 /* Intro title*/
 .intro__title {
@@ -63,8 +60,6 @@ font-size: 150px;
 font-weight: 700;
 color: #fff;
 text-transform: uppercase;
-
-
 line-height: 1;
 }
 .intro__title::after{
@@ -74,7 +69,6 @@ line-height: 1;
     height: 3px;
     background-color: #fff;
     margin: 60px auto ;
-
 }
 
 /* HEADER*/
@@ -100,14 +94,11 @@ line-height: 1;
        font-weight: 700;
        color: #fff;
 }
-
 /* nav*/
 .nav {
     font-size: 14px;
     text-transform: uppercase;
-
 }
-
 /* nav_link*/
 .nav__link {
     display: inline-block;
@@ -119,7 +110,6 @@ line-height: 1;
     text-decoration: none;
     transition: color .1s linear;
 }
-
 .nav__link:after{
     content: " ";
     display: block;
@@ -138,12 +128,9 @@ line-height: 1;
     display: block;
     opacity: 1;
 }
-
 .nav__link.active {
     color:  #fce38a ;
 }
-
-
 /*
 .nav__link:before{
     content: "yyyyyyyy";
@@ -155,7 +142,6 @@ line-height: 1;
     bottom: 100%;
     left: 0;
     color: white;
-
 }
 */
 .nav__link:hover {
@@ -188,13 +174,10 @@ transition: background .1s linear, color .1s linear;
     bottom: 0;
     left: 0;
     z-index: 1;
-
-
 }
 .slider__inner {
     display: flex;
     justify-content: space-between;
-
 }
 .slider__item {
     width: 23%;
@@ -209,7 +192,6 @@ transition: background .1s linear, color .1s linear;
 .slider__item.active {
     opacity:
 }
-
 .slider__item.active :after{
 content:"";
 display: block;
@@ -221,14 +203,12 @@ top: -3px;
 left: 0;
 z-index: 1;
 }
-
 .slider__number {
     font-size: 24px ;
     font-weight: 700;
 }
 
 /* SECTION */
-
 .section {
     padding: 80px 0;
 }
@@ -236,7 +216,11 @@ z-index: 1;
     background: url("../images/devices-bg.jpg") center no-repeat;
     background-size: cover;
     padding-bottom: 0;
-
+    margin-bottom: 40px;
+}
+.section--gray {
+    background-color: #f8f8f8 ;
+    padding: 0;
 }
 .section__header {
     width: 100%;
@@ -351,7 +335,7 @@ transform: translate3d(-10px, -10px, 0) ; /* сдвигает картинку*/
     display: flex;
 }
 .services__item {
-    flex: 1 1 0 ; /*делает одинаковой ширины */
+    flex: 1 1 0 ; /*делает блоки одинаковой ширины */
     padding-left: 85px;
     padding-right: 35px ;
     position: relative;
@@ -389,4 +373,143 @@ position: absolute;
 bottom: -80px;
 right: 0;
 z-index: 1;
+}
+/* WEDO*/
+.wedo {
+    display: flex;
+}
+.wedo__item {
+    width: 50%;
+}
+
+
+/* ACCORDION */
+.accordion__item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 6px;
+}
+.accordion__item.active
+.accordion_content {
+    display: block;
+}
+.accordion__item.active
+.accordion__header {
+    border-bottom-color:  #e5e5e5;
+}
+.accordion__item.active
+.accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+.accordion__header {
+    border-bottom:1px solid transparent;
+    padding: 15px 40px 15px 65px;
+    position: relative;
+    cursor: pointer;
+}
+.accordion__header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+}
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.accordion_title {
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.accordion_content {
+    font-size: 15px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    padding: 14px 20px;
+    display: none;
+
+}
+
+/*section section--gray*/
+.reviews {
+    position: relative;
+}
+.reviews__item {
+    padding: 80px 110px 70px 320px;
+    position: relative;
+}
+.reviews__item:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(-135deg);
+}
+.reviews__item:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.reviews__photo {
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.reviews__text {
+    font-size: 24px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.reviews__author {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+    position: relative;
+    padding-left: 70px;
+    display: inline;
+}
+.reviews__author:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f38181;
+    position: absolute;
+    top: 50%;
+
+    z-index: 1;
+    transform: translateY(-50%);
 }
