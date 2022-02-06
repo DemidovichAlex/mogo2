@@ -220,7 +220,6 @@ z-index: 1;
 }
 .section--gray {
     background-color: #f8f8f8 ;
-    padding: 0;
 }
 .section__header {
     width: 100%;
@@ -443,73 +442,67 @@ z-index: 1;
 
 }
 
-/*section section--gray*/
+/*Reviews*/
 .reviews {
+    padding: 0 110px;
     position: relative;
 }
 .reviews__item {
-    padding: 80px 110px 70px 320px;
+    padding-left: 205px;
     position: relative;
-}
-.reviews__item:before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #cccccc;
-    border-right: 2px solid #cccccc;
-    position: absolute;
-    top: 50%;
-    left: 22px;
-    z-index: 1;
-    transform: translateY(-50%) rotate(-135deg);
-}
-.reviews__item:after{
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #cccccc;
-    border-right: 2px solid #cccccc;
-    position: absolute;
-    top: 50%;
-    right: 22px;
-    z-index: 1;
-    transform: translateY(-50%) rotate(45deg);
-}
 
-
+}
 .reviews__photo {
     position: absolute;
-    left: 110px;
-    top: 50%;
+    top:0;
+    left: 0;
     z-index: 1;
-    transform: translateY(-50%);
+    border: 2px solid #95e1d3;
 }
 .reviews__text {
     font-size: 24px;
-    color: #999999;
+    color: #999;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
+    margin-bottom: 15px;
 }
 .reviews__author {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     color: #333;
-    position: relative;
-    padding-left: 70px;
-    display: inline;
 }
 .reviews__author:before {
     content: "";
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
     width: 60px;
     height: 4px;
     background-color: #f38181;
+    margin-right: 10px;
+}
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
     position: absolute;
     top: 50%;
-
     z-index: 1;
     transform: translateY(-50%);
+}
+.reviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+
+}
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
 }
