@@ -468,7 +468,7 @@ z-index: 1;
     position: relative;
 }
 .reviews__item {
-    padding-left: 205px;
+    padding-left: 255px;
     position: relative;
 
 }
@@ -477,7 +477,10 @@ z-index: 1;
     top:0;
     left: 0;
     z-index: 1;
-    border: 2px solid #95e1d3;
+    margin-top: -15px;
+    /*border: 2px solid #95e1d3;
+    border-radius: 50%;*/
+
 }
 .reviews__text {
     font-size: 24px;
@@ -564,5 +567,53 @@ z-index: 1;
 }
 .works__col{
     flex: 1 1 0; /* чтобы все колонки были обинаковыми*/
+}
+.works__item {
+    background: linear-gradient(180deg, #f38181, #fce38a);/* делаем подложку с градиентом. Она не видна, т.к. img перекрывает ее*/
+    position: relative;
 
 }
+.works__item:hover .works__img {
+    opacity: .1;
+}
+.works__item:hover .works__info {
+    opacity: 1;
+}
+.works__img {
+    display: block; /*для того, чтобы не было плоски между картинкой и градиентом*/
+    max-width: 100%; /*делаем картинки адаптивными, чтобы картинки помещались на экран и не появлялся скроллинк по ширине*/
+    height: auto;
+    transition: opacity .2s linear;
+
+
+
+}
+
+.works__info {
+    width: 100%; /*обязательно дя выравнивания блока по горизонтали при position: absolute*/
+    position: absolute;
+    padding: 0 15px;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate3d(0,-50%, 0);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .2s linear;
+
+}
+.works__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+}
+.works__text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
