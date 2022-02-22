@@ -225,6 +225,11 @@ z-index: 1;
     background:url("../images/devices-bg.jpg") center no-repeat;
     background-size: cover;
 }
+.section--map {
+    background:url("../images/map/map.jpg") center no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
 
 .section__header {
     width: 100%;
@@ -754,4 +759,127 @@ margin-top: 70px;
 }
 .blog-stat__item i {
     color: #95e1d3;
+}
+
+/* Map*/
+.map {
+    text-align: center;
+}
+.map__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f38181;
+}
+.map__title a {
+    color:inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.map__title a:hover {
+   text-decoration: underline;
+}
+.map__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px auto 0;
+}
+/*Footer*/
+.footer {
+    padding-top: 65px;
+    background-color: #f8f8f8;
+}
+.footer__inner {
+    margin-bottom: 65px;
+}
+.footer__logo {
+    font-size: 46px;
+    font-weight: 700;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+.footer__text {
+    font-size: 15px ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 30px;
+}
+.footer__social {
+    margin-bottom: 25px;
+}
+.footer__social-header {
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+ }
+ .footer__social-header b {
+     font-size: 18px;
+ }
+ .footer__social-content {
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+ }
+ .footer__social-content a {
+     color: #95e1d3;
+     font-size: 18px;
+     display: inline-block;
+     vertical-align: middle;
+     margin-left: 10px;
+ }
+/*subscribe */
+.subscribe {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+}
+.subscribe__input {
+    width: 60%;
+    height: 40px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #333;
+    line-height: 1.1;
+}
+.subscribe__input:focus {
+    outline: 0;
+    border-color: #528d82 ;
+}
+
+.subscribe__input::placeholder {
+    color: #ccc;
+}
+
+.subscribe__button {
+    width: 40%;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    padding: 12px 30px;
+    line-height: 1.1;
+    transition: background-color .2s linear;
+}
+.subscribe__button:hover {
+    background-color: #528d82;
+}
+.subscribe__button:focus {
+    outline: 0;
 }
