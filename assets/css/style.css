@@ -793,6 +793,17 @@ margin-top: 70px;
 }
 .footer__inner {
     margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__col--first {
+    width: 40%
+}
+.footer__col--second {
+    width: 29%
+}
+.footer__col--third {
+    width: 22%;
 }
 .footer__logo {
     font-size: 46px;
@@ -833,6 +844,75 @@ margin-top: 70px;
      vertical-align: middle;
      margin-left: 10px;
  }
+ .footer__title {
+     font-size: 14px;
+     text-transform: uppercase;
+     color:#333;
+     margin: 30px 0;
+ }
+/*Blogs*/
+.blogs__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.blogs__img {
+    width: 120px;
+    height: 80px;
+
+}
+.blogs__content {
+    padding-left: 20px;
+}
+.blogs__title {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.5 ;
+    margin-bottom: 5px;
+}
+.blogs__title:hover {
+    text-decoration: underline;
+}
+.blogs__date {
+     font-size: 13px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     font-style: italic;
+     color: #999;
+}
+/*instagram*/
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.instagram__item {
+    width: 32.333333%;
+    /*flex: 1 1 0; все блоки в flex - одинакового размера*/
+    border-bottom: 1px solid #fff;
+}
+.instagram__item img {
+    display: block;
+}
+.instagram__footer {
+    padding-top: 20px;
+
+}
+.instagram__footer a {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #333;
+    text-decoration: none;
+}
+.instagram__footer:hover {
+    text-decoration: underline;
+}
+
 /*subscribe */
 .subscribe {
     width: 100%;
@@ -882,4 +962,16 @@ margin-top: 70px;
 }
 .subscribe__button:focus {
     outline: 0;
+}
+/*copyright*/
+.copyright {
+    padding: 20px 0 ;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+
+}
+.copyright span {
+    color:#f4a4a4;
 }
