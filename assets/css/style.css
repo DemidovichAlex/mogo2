@@ -39,7 +39,6 @@ hr {
     background: url("../images/intro.jpg") center no-repeat;
     background-size: cover;
 }
-/** Intro__inner*/
 .intro__inner {
 width: 100%;
 max-width: 880px;
@@ -47,14 +46,12 @@ margin: 150px auto 0; /* выравниваем  блок по центру*/
 text-align: center;  /* выравнивает текст по центру контейнера*/
 
 }
-/* intro__suptitle*/
 .intro__suptitle {
 font-size: 72px;
 color: #fff;
 font-family: 'Kaushan Script', cursive;
 margin-bottom: 20px ;
 }
-/* Intro title*/
 .intro__title {
 font-size: 150px;
 font-weight: 700;
@@ -81,31 +78,27 @@ line-height: 1;
     right: 0;
     z-index: 1000;
 }
-/* Header_inner */
 .header_inner{
     display: flex;
     justify-content: space-between ;
     align-items: center;
 }
-
-/* Header__logo*/
 .header__logo{
        font-size: 30px;
        font-weight: 700;
        color: #fff;
 }
-/* nav*/
+
+/* NAV*/
 .nav {
     font-size: 14px;
     text-transform: uppercase;
 }
-/* nav_link*/
 .nav__link {
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
     position: relative;
-
     color: #fff;
     text-decoration: none;
     transition: color .1s linear;
@@ -148,7 +141,7 @@ line-height: 1;
     color: #fce38a;
 }
 
-/* btn */
+/* BTN */
 .btn {
 display: inline-block;
 vertical-align: top;
@@ -167,7 +160,7 @@ transition: background .1s linear, color .1s linear;
     background-color: #fff;
 }
 
-/* slider */
+/* SLIDER */
 .slider {
     position: absolute;
     width: 100%;
@@ -329,6 +322,7 @@ margin-bottom: 5px;
     font-weight: 300;
     font-style: italic;
 }
+
 /* STATISTICS */
 .statistics {
     background-color: #95e1d3;
@@ -346,7 +340,6 @@ margin-bottom: 5px;
 .stat__item:last-child {
     border-right: 1px solid #b5eae0;
 }
-
 .stat__count {
     font-size: 72px;
     font-weight: 700;
@@ -373,7 +366,6 @@ margin-bottom: 5px;
     text-transform: uppercase;
     color: #333333;
     margin-bottom: 10px;
-
 }
 .services__text {
     font-size: 15px;
@@ -402,6 +394,7 @@ bottom: -80px;
 right: 0;
 z-index: 1;
 }
+
 /* WEDO*/
 .wedo {
     display: flex;
@@ -409,7 +402,6 @@ z-index: 1;
 .wedo__item {
     width: 50%;
 }
-
 
 /* ACCORDION */
 .accordion__item {
@@ -468,10 +460,9 @@ z-index: 1;
     font-style: italic;
     padding: 14px 20px;
     display: none;
-
 }
 
-/*Reviews*/
+/*REVIEWs*/
 .reviews {
     padding: 0 110px;
     position: relative;
@@ -479,7 +470,6 @@ z-index: 1;
 .reviews__item {
     padding-left: 255px;
     position: relative;
-
 }
 .reviews__photo {
     position: absolute;
@@ -489,7 +479,6 @@ z-index: 1;
     margin-top: -15px;
     /*border: 2px solid #95e1d3;
     border-radius: 50%;*/
-
 }
 .reviews__text {
     font-size: 24px;
@@ -528,7 +517,6 @@ z-index: 1;
     height: 16px;
     border-top: 2px solid #cccccc;
     border-left: 2px solid #cccccc;
-
 }
 .reviews__btn--prev {
     left: 0;
@@ -538,11 +526,11 @@ z-index: 1;
     right: 0;
     transform: rotate(135deg);
 }
-/* Social */
+
+/* SOCIAL */
 .social {
     display: flex;
     justify-content: center;
-
 }
 .social__item {
     background-color: #fce38a;
@@ -563,14 +551,15 @@ z-index: 1;
     background-color: #f38181;
     color: #fff;
 }
-/*Logos*/
+
+/*LOGOS*/
 .logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Works*/
+/* WORKS*/
 .works {
     display: flex;
 }
@@ -580,7 +569,6 @@ z-index: 1;
 .works__item {
     background: linear-gradient(180deg, #f38181, #fce38a);/* делаем подложку с градиентом. Она не видна, т.к. img перекрывает ее*/
     position: relative;
-
 }
 .works__item:hover .works__img {
     opacity: .1;
@@ -593,11 +581,7 @@ z-index: 1;
     max-width: 100%; /*делаем картинки адаптивными, чтобы картинки помещались на экран и не появлялся скроллинк по ширине*/
     height: auto;
     transition: opacity .2s linear;
-
-
-
 }
-
 .works__info {
     width: 100%; /*обязательно дя выравнивания блока по горизонтали при position: absolute*/
     position: absolute;
@@ -610,24 +594,20 @@ z-index: 1;
     color: #fff;
     opacity: 0;
     transition: opacity .2s linear;
-
 }
 .works__title {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 5px;
-
 }
 .works__text {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
-
 }
 
-
-/* Clients*/
+/* CLIENTS*/
 .clients {
 display: flex;
 flex-wrap: wrap;
@@ -660,15 +640,12 @@ margin-top: 70px;
     font-weight: 300;
     font-style: italic;
     color: #333;
-
 }
 .clients__text {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #999;
-
-
 }
 .clients__text:before {
     content: "";
@@ -677,7 +654,6 @@ margin-top: 70px;
     height: 3px;
     margin: 15px 0;
     background-color: #f38181;
-
     top: 0;
     left: 0;
     z-index: 1;
@@ -713,8 +689,6 @@ margin-top: 70px;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
-
-
 }
 .blog__date-day {
     font-size: 30px;
@@ -761,7 +735,7 @@ margin-top: 70px;
     color: #95e1d3;
 }
 
-/* Map*/
+/* MAP*/
 .map {
     text-align: center;
 }
@@ -786,7 +760,8 @@ margin-top: 70px;
     background-color: #f38181;
     margin: 15px auto 0;
 }
-/*Footer*/
+
+/*FOOTER*/
 .footer {
     padding-top: 65px;
     background-color: #f8f8f8;
@@ -883,7 +858,8 @@ margin-top: 70px;
      font-style: italic;
      color: #999;
 }
-/*instagram*/
+
+/*INSTAGRAM*/
 .instagram {
     display: flex;
     flex-wrap: wrap;
@@ -899,7 +875,6 @@ margin-top: 70px;
 }
 .instagram__footer {
     padding-top: 20px;
-
 }
 .instagram__footer a {
     font-size: 13px;
@@ -913,7 +888,7 @@ margin-top: 70px;
     text-decoration: underline;
 }
 
-/*subscribe */
+/*SUBSCRIBE */
 .subscribe {
     width: 100%;
     max-width: 380px;
@@ -937,11 +912,9 @@ margin-top: 70px;
     outline: 0;
     border-color: #528d82 ;
 }
-
 .subscribe__input::placeholder {
     color: #ccc;
 }
-
 .subscribe__button {
     width: 40%;
     height: 40px;
@@ -963,15 +936,20 @@ margin-top: 70px;
 .subscribe__button:focus {
     outline: 0;
 }
-/*copyright*/
+
+/*COPYRIGHT*/
 .copyright {
     padding: 20px 0 ;
     border-top: 1px solid #e5e5e5;
     text-align: center;
     color: #333;
     font-size: 14px;
-
 }
 .copyright span {
     color:#f4a4a4;
 }
+
+@media (max-width 1200px)
+    body {
+        background-color: red;
+    }
